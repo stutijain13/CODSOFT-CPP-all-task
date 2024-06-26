@@ -1,0 +1,42 @@
+# include <iostream>
+using namespace std;
+
+int main() {
+
+  char perform;
+  float num1, num2;
+
+  cout << "Enter operator: +, -, *, /: ";
+  cin >> perform;
+
+  cout << "Enter first number "<<endl;;
+  cin >> num1;
+  cout<<"Enter second number"<<endl;
+  cin>>num2; 
+
+  switch(perform) {
+
+    case '+':
+      cout << num1 << " + " << num2 << " = " << num1 + num2;
+      break;
+
+    case '-':
+      cout << num1 << " - " << num2 << " = " << num1 - num2;
+      break;
+
+    case '*':
+      cout << num1 << " * " << num2 << " = " << num1 * num2;
+      break;
+
+    case '/':
+      cout << num1 << " / " << num2 << " = " << num1 / num2;
+      break;
+
+    default:
+      
+      cout << "Error!";
+      break;
+  }
+
+  return 0;
+}
